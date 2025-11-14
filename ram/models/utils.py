@@ -253,7 +253,7 @@ def load_checkpoint_swinlarge(model, url_or_filename, kwargs):
                                            progress=True)
         checkpoint = torch.load(cached_file, map_location='cpu')
     elif os.path.isfile(url_or_filename):
-        checkpoint = torch.load(url_or_filename, map_location='cpu')
+        checkpoint = torch.load(url_or_filename, map_location='cpu',weights_only=True)
     else:
         raise RuntimeError('checkpoint url or path is invalid')
 
