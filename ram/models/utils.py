@@ -12,6 +12,7 @@ from .vit import interpolate_pos_embed, VisionTransformer
 from .swin_transformer import interpolate_relative_pos_embed
 from pathlib import Path
 CONFIG_PATH=(Path(__file__).resolve().parents[1])
+print(CONFIG_PATH)
 
 def read_json(rpath):
     with open(rpath, 'r') as f:
