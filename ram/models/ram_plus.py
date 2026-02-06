@@ -13,6 +13,7 @@ import torch.nn.functional as F
 from .bert import BertConfig, BertLMHeadModel, BertModel
 from .swin_transformer import SwinTransformer
 from .utils import *
+from ram import CONFIG_PATH
 
 warnings.filterwarnings("ignore")
 
